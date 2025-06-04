@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Basic Website - Menu Response</title>
+  <title>My Basic Website - Orders</title>
   <link rel="stylesheet" href="style.css">
   <style>
     pre {
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <h1>Menu Response</h1>
+    <h1>Orders</h1>
   </header>
 
   <nav>
@@ -28,7 +28,7 @@
   </nav>
 
   <main>
-    <h2>Restaurant Menu JSON</h2>
+    <h2>Orders</h2>
     <pre id="jsonDisplay"></pre>
   </main>
 
@@ -38,24 +38,23 @@
 
   <script>
     const jsonData = {
-      "restaurantId": "12345",
-      "menuItems": {
-        "itemGuid1": {
-          "itemName": "Cheeseburger",
-          "itemDescription": "A juicy grilled beef burger with cheddar cheese, lettuce, and tomato.",
-          "isAvailable": true,
-          "category": "Entree",
-          "tags": ["beef", "grilled", "cheese"]
-        },
-        "itemGuid2": {
-          "itemName": "Caesar Salad",
-          "itemDescription": "Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese.",
-          "isAvailable": false,
-          "category": "Salad",
-          "tags": ["vegetarian", "cold", "starter"]
-        }
-      }
-    };
+  "orderID": "abc123",
+  "restaurantID": "12345",
+  "paymentID": "pay789",
+  "item1": {
+    "itemGuid": "itemGuid1",
+    "itemCount": 2,
+    "specialNotes": "Extra cheese"
+  },
+  "deliveryAddress": {
+    "line1": "123 Main St",
+    "line2": "Apt 4B",
+    "city": "New York",
+    "state": "NY",
+    "zip": "10001",
+    "deliveryNotes": "Leave at the front door"
+  }
+};
 
     document.getElementById("jsonDisplay").textContent = JSON.stringify(jsonData, null, 2);
   </script>

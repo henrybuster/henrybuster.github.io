@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Basic Website - Menu Response</title>
+  <title>My Basic Website - Order Updates</title>
   <link rel="stylesheet" href="style.css">
   <style>
     pre {
@@ -17,7 +17,7 @@
 </head>
 <body>
   <header>
-    <h1>Menu Response</h1>
+    <h1>Order Updates</h1>
   </header>
 
   <nav>
@@ -28,7 +28,7 @@
   </nav>
 
   <main>
-    <h2>Restaurant Menu JSON</h2>
+    <h2>Order Updates</h2>
     <pre id="jsonDisplay"></pre>
   </main>
 
@@ -38,24 +38,12 @@
 
   <script>
     const jsonData = {
-      "restaurantId": "12345",
-      "menuItems": {
-        "itemGuid1": {
-          "itemName": "Cheeseburger",
-          "itemDescription": "A juicy grilled beef burger with cheddar cheese, lettuce, and tomato.",
-          "isAvailable": true,
-          "category": "Entree",
-          "tags": ["beef", "grilled", "cheese"]
-        },
-        "itemGuid2": {
-          "itemName": "Caesar Salad",
-          "itemDescription": "Crisp romaine lettuce with Caesar dressing, croutons, and parmesan cheese.",
-          "isAvailable": false,
-          "category": "Salad",
-          "tags": ["vegetarian", "cold", "starter"]
-        }
-      }
-    };
+  "orderID": "abc123",
+  "orderStatus": "In Transit",
+  "orderEta": "2025-06-04T15:30:00Z",
+  "orderCourier": "John Doe"
+}
+;
 
     document.getElementById("jsonDisplay").textContent = JSON.stringify(jsonData, null, 2);
   </script>
