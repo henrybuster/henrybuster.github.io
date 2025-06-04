@@ -40,12 +40,18 @@
     const jsonData = {
   "orderID": "abc123",
   "restaurantID": "12345",
-  "paymentID": "pay789",
-  "item1": {
-    "itemGuid": "f2d5fd9c-3d42-4916-9f50-7bb5e316f208",
-    "itemCount": 2,
-    "specialNotes": "Extra cheese"
-  },
+  "items": [
+    {
+      "itemGuid": "f2d5fd9c-3d42-4916-9f50-7bb5e316f208",
+      "itemCount": 2,
+      "specialNotes": "Extra cheese"
+    },
+    {
+      "itemGuid": "9b7e2fa6-ecbb-4ad5-a4b3-4ea0eae943d0",
+      "itemCount": 1,
+      "specialNotes": "No onions"
+    }
+  ],
   "deliveryAddress": {
     "line1": "123 Main St",
     "line2": "Apt 4B",
@@ -56,11 +62,11 @@
   },
   "paymentInformation": {
     "paymentMethod": "Card",
-    "currency": "usd",
+    "currency": "usd"
   },
   "totalCost": {
-    "itemCount": 2,
-    "totalCost": 1000
+    "itemCount": 3,
+    "totalCost": 1500
   }
 };
 
