@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Basic Website - Orders</title>
+  <title>Checkout</title>
   <link rel="stylesheet" href="style.css">
   <style>
     pre {
@@ -17,18 +17,18 @@
 </head>
 <body>
   <header>
-    <h1>Orders</h1>
+    <h1>Checkout</h1>
   </header>
 
   <nav>
     <a href="index.html">Home</a>
     <a href="menuResponse.html">Menu Response</a>
-    <a href="orders.html">Orders</a>
+    <a href="checkout.html">Checkout</a>
     <a href="orderUpdates.html">Order Updates</a>
   </nav>
 
   <main>
-    <h2>Orders</h2>
+    <h2>Checkout</h2>
     <pre id="jsonDisplay"></pre>
   </main>
 
@@ -40,6 +40,7 @@
     const jsonData = {
   "orderID": "abc123",
   "restaurantID": "12345",
+  "customerID": "412398",
   "items": [
     {
       "itemGuid": "f2d5fd9c-3d42-4916-9f50-7bb5e316f208",
